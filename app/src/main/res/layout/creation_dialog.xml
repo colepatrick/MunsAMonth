@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/hpd"
+        android:layout_width="172dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="@string/zero"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t4"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/dpw"
+        android:layout_width="172dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="@string/zero"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hpd"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/wpm"
+        android:layout_width="172dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="@string/zero"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dpw"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/mpy"
+        android:layout_width="172dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="@string/zero"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wpm"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/InstructionText"
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/new_expense"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:flow_wrapMode="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        app:layout_wrapBehaviorInParent="horizontal_only" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mpy" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InstructionText" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textOff="EXPENSE"
+        android:textOn="INCOME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameBox" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/every"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="339dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/money_changes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="208dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/hpd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/hpd"
+        app:layout_constraintTop_toTopOf="@+id/hpd" />
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="208dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/dpw"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/dpw"
+        app:layout_constraintTop_toTopOf="@+id/dpw" />
+
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="208dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/wpm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/wpm"
+        app:layout_constraintTop_toTopOf="@+id/wpm" />
+
+    <TextView
+        android:id="@+id/t8"
+        android:layout_width="208dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/mpy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/mpy"
+        app:layout_constraintTop_toTopOf="@+id/mpy" />
+
+    <EditText
+        android:id="@+id/intervalBox"
+        android:layout_width="172dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="@string/enter_time"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/t1"
+        app:layout_constraintTop_toTopOf="@+id/t1"
+        tools:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="119dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/spinner_items"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toEndOf="@+id/intervalBox"
+        app:layout_constraintTop_toTopOf="@+id/intervalBox" />
+
+    <EditText
+        android:id="@+id/moneyBox"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/t3"
+        app:layout_constraintTop_toTopOf="@+id/t3" />
+
+    <EditText
+        android:id="@+id/t3"
+        android:layout_width="31dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:text="@string/dollar_sign"
+        app:layout_constraintEnd_toStartOf="@+id/moneyBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/except"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
