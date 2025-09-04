@@ -26,6 +26,7 @@
     <string name="wpm">weeks per month</string>
     <string name="mpy">months per year</string>
     <string name="zero">0</string>
+    <string name="delete">Delete</string>
     <string-array name="spinner_items">
         <item>hours</item>
         <item>days</item>

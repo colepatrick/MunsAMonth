@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:drawable/editbox_dropdown_light_frame"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="8dp">
 
@@ -17,11 +18,24 @@
         android:textStyle="bold" />
 
     <!-- Optional description -->
+
     <TextView
         android:id="@+id/projectDescText"
-        android:layout_width="wrap_content"
+        android:layout_width="393dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
         android:text="Project description"
         android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete" />
+
 </LinearLayout>

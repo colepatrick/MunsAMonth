@@ -39,7 +39,7 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ViewHold
         holder.nameText.setText(project.getName());
         double income = project.calculateIncome();
         double expense = -project.calculateExpenses();
-        String description = "MONTHLY INCOME: $" + income + ". EXPENSES: $" + expense + ". GROSS: $" + (income + expense) + ".";
+        String description = String.format("MONTHLY INCOME: $%.2f | EXPENSES: $%.2f | GROSS: $%.2f", income, expense, income + expense);
         holder.descText.setText(description);
     }
 
